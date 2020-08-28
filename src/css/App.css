@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  background-color: inherit;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .screen-div {
+  background-color: aliceblue;
+  color: black;
+  font-size: 1.5rem;
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.container .button-div {
+  margin: 10px;
+  width: 100%;
+  background-color: inherit;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px 8px;
+  grid-template-areas:
+    "clear clear divide multiply"
+    "seven eigth nine minus"
+    "four five six plus"
+    "one two three equal"
+    "backspace zero dot equal";
+}
+
+.button-div .clear {
+  grid-area: clear;
+  background-color: tomato;
+}
+.button-div .divide {
+  grid-area: divide;
+}
+.button-div .multiply {
+  grid-area: multiply;
+}
+.button-div .seven {
+  grid-area: seven;
+}
+.button-div .eigth {
+  grid-area: eigth;
+}
+.button-div .nine {
+  grid-area: nine;
+}
+.button-div .minus {
+  grid-area: minus;
+}
+.button-div .four {
+  grid-area: four;
+}
+.button-div .five {
+  grid-area: five;
+}
+.button-div .six {
+  grid-area: six;
+}
+.button-div .plus {
+  grid-area: plus;
+}
+.button-div .one {
+  grid-area: one;
+}
+.button-div .two {
+  grid-area: two;
+}
+.button-div .three {
+  grid-area: three;
+}
+.button-div .equal {
+  grid-area: equal;
+}
+.button-div .zero {
+  grid-area: zero;
+}
+.button-div .dot {
+  grid-area: dot;
+}
+.button-div .backspace {
+  grid-area: backspace;
+}
+
+.container .download-button{
+  margin: 10px;
+  align-self: start;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+  background-color: rgb(16, 155, 236);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
